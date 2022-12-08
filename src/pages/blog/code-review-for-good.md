@@ -29,7 +29,7 @@ The common theme is these reviews push work to the author that the reviewer coul
 
 ## Review for Good
 
-How then shall we review code? For a human process like code review, it's challenging to provide a rubric. Everyone is different, and a significant part of code review hinges on the  relationship between reviewer and author. So instead, I'll highlight _my_ general approach to code review.
+How then shall we review code? For a human process like code review, it's challenging to provide a rubric. Everyone is different, and a significant part of code review hinges on the relationship between reviewer and author. So instead, I'll highlight _my_ general approach to code review.
 
 I prefer a top down approach. I first look to understand the problem and the approach. In practice this means reading the PR in full _before_ providing any feedback. If I'm not clear on the problem or the approach doesn't quite sit right with me, I'll leave feedback indicating such. My goal is to provide a sanity check before diving into specifics. If the author and I aren't aligned, code specific feedback is simply noise.
 

@@ -37,9 +37,9 @@ UpdateOrderBalance.new(order).call
 
 ## Cleaning up the interface
 
-Great! We've made our first service object. Though calling `new` preceded immediately by  `call` isn’t exactly a pattern that exudes elegance. Ultimately we still want to instantiate our service object and then invoke it, but we want to look good doing it.
+Great! We've made our first service object. Though calling `new` preceded immediately by `call` isn’t exactly a pattern that exudes elegance. Ultimately we still want to instantiate our service object and then invoke it, but we want to look good doing it.
 
-One way we can accomplish this is by building a new base class, which abstracts away the logic of calling  `new` and `call`.
+One way we can accomplish this is by building a new base class, which abstracts away the logic of calling `new` and `call`.
 
 ```ruby
 class Service

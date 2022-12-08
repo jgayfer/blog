@@ -24,7 +24,7 @@ Accounts exist on a single server. For example, [my account](https://fosstodon.o
 - [**Following.**](https://www.w3.org/TR/activitypub/#following) Actors this Actor is following.
 - [**Followers.**](https://www.w3.org/TR/activitypub/#followers) Actors that follow this Actor.
 
-When a user follows another, the respective **following** and **followers** fields are updated. Users do not need to be on the same server to follow each other. The definition of a user account resides on a single server, but references can exist on many servers through the **following** and **followers** fields. This is why Mastodon’s search behaves differently across servers; the server only knows about users it has seen before.
+When a user follows another, the respective **following** and **followers** fields are updated. Users do not need to be on the same server to follow each other. The definition of a users account resides on a single server, but references can exist on many servers through the **following** and **followers** fields. This is why Mastodon’s search behaves differently across servers; the server only knows about users it has seen before.
 
 When a user creates a post, a message is added to their **outbox**. The message is then pushed to the **inbox** of all users in the author’s **followers** collection. These messages are often published cross-server, but can just as easily be published to an inbox on the same server.
 
