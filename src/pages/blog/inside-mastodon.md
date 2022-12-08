@@ -5,7 +5,7 @@ description: "A look inside the inner workings of Mastodon's decentralized socia
 pubDate: "Nov 28 2022"
 ---
 
-[Mastodon](https://joinmastodon.org/) is an open source social network similar to [Twitter](https://twitter.com/), but it’s _decentralized_.  The network is made of individual servers that are _federated_ (connected). Accounts exist on a single server, but posts and other activity transcend server boundaries.
+[Mastodon](https://joinmastodon.org/) is an open source social network similar to [Twitter](https://twitter.com/), but it’s _decentralized_. The network is made of individual servers that are _federated_ (connected). Accounts exist on a single server, but posts and other activity transcend server boundaries.
 
 Understanding the decentralized nature of Mastodon isn’t paramount. Creating and sharing posts is a familiar process. But understanding the three “timelines” will augment the experience.
 
