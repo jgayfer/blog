@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "A Look Inside Mastodon"
 description: "A look inside the inner workings of Mastodon's decentralized social network."
 pubDate: "Nov 28 2022"

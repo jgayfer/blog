@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "Learn to Never Be Wrong"
 description: "As a software developer, there's an intrinsic desire to be right, but that desire can lead to ineffective teams, especially in leadership positions."
 pubDate: "Nov 15 2022"

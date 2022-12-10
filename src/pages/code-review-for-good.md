@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "Code Review for Good"
 description: "Code review is an inherently human process; we place our hard work on a pedestal for our peers to judge. It's ripe for conflict, but it doesn't have to be."
 pubDate: "Nov 21 2022"

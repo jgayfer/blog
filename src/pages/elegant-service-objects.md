@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../layouts/BlogPost.astro"
 title: "Elegant Service Objects"
 description: "A guide on how to write low friction service objects for a Ruby on Rails application."
 pubDate: "Feb 28 2021"
