@@ -1,67 +1,110 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
+:root {
+  --width: 50rem;
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  --font-secondary: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  --font-scale: 1.2em;
+  --background-color: #0d1117;
+  --heading-color: #e3e9f0;
+  --text-color: #c9d1d9;
+  --link-color: #e3bc5e;
+  --visited-color: #dfcc9e;
+  --code-color: #ebdbb2;
+  --blockquote-color: #c9d1d9;
+}
+
 body {
-  font-family: Verdana, sans-serif;
+  font-family: var(--font-secondary);
+  font-size: var(--font-scale);
   margin: auto;
   padding: 20px;
-  max-width: 65ch;
+  max-width: var(--width);
   text-align: left;
-  background-color: #fff;
+  background-color: var(--background-color);
   word-wrap: break-word;
   overflow-wrap: break-word;
-  line-height: 1.6;
-  color: #444;
+  line-height: 1.5;
+  color: var(--text-color);
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  font-family: var(--font-main);
+  color: var(--heading-color);
+}
+
 strong,
 b {
-  color: #222;
+  color: var(--heading-color);
 }
+
 a {
-  color: #3273dc;
+  color: var(--link-color);
+  cursor: pointer;
+  text-decoration: none;
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
 nav a {
-  margin-right: 10px;
+  margin-right: 8px;
 }
-textarea {
-  width: 100%;
-  font-size: 16px;
+
+button {
+  margin: 0;
 }
-input {
-  font-size: 16px;
-}
+
 content {
   line-height: 1.6;
 }
+
 table {
   width: 100%;
 }
+
+hr {
+  border: 0;
+  border-top: 1px dashed;
+}
+
 img {
   max-width: 100%;
-  height: auto;
 }
-code {
-  padding: 2px 5px;
-  background-color: #f2f2f2;
-}
-pre {
-  padding: 1rem;
-}
-pre > code {
-  all: unset;
-}
+
 blockquote {
-  border: 1px solid #999;
-  color: #222;
-  padding: 2px 0px 2px 20px;
-  margin: 0px;
+  border-left: 1px solid #999;
+  color: var(--code-color);
+  padding-left: 20px;
   font-style: italic;
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+}
+
+button {
+  border: 0;
+  background-color: inherit;
+  text-decoration: underline;
+  color: var(--heading-color);
+}
+
+.title {
+  text-decoration: none;
+}
+
+.title h1 {
+  color: var(--link-color);
+}
+
+.inline {
+  width: auto !important;
 }
