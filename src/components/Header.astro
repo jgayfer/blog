@@ -1,24 +1,16 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE } from "../config";
+const { title, description } = Astro.props.frontmatter || Astro.props;
 ---
-
 <header>
-  <h2>
-    <a class="site_title" href="/">{SITE_TITLE}</a>
-  </h2>
-  <nav>
-    <HeaderLink href="/">Home</HeaderLink>
-    <HeaderLink href="/projects">Projects</HeaderLink>
-    <HeaderLink href="/blog">Blog</HeaderLink>
-  </nav>
+	<nav>
+		<HeaderLink href="/">Home</HeaderLink>
+		<HeaderLink href="/blog">Blog</HeaderLink>
+	</nav>
+	<h1>
+		{title}
+	</h1>
+	{description &&
+	<p>{description}</p>
+	}
 </header>
-<style>
-  h2 {
-    margin: 0.5em 0;
-  }
-  .site_title {
-    text-decoration: none;
-    color: inherit;
-  }
-</style>

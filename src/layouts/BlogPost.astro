@@ -22,37 +22,26 @@ const {
   <head>
     <BaseHead title={title} description={description} />
     <style>
-      .title {
-        font-size: 2em;
-        margin: 0.5em 0;
-      }
-      content {
-        line-height: 1.6;
-      }
-      time {
-        font-style: italic;
-      }
-    </style>
+			main p:first-child {
+			color: var(--text-light);
+			font-size: 1rem;
+			}
+		</style>
   </head>
 
   <body>
-    <Header />
+    <Header title={title} />
     <main>
-      <article>
-        {heroImage && <img width={720} height={360} src={heroImage} alt="" />}
-        <h1 class="title">{title}</h1>
-        {pubDate && <time>{pubDate}</time>}
-        {
-          updatedDate && (
-            <div>
-              Last updated on <time>{updatedDate}</time>
-            </div>
-          )
-        }
-        <content>
-          <slot />
-        </content>
-      </article>
+      {pubDate && <p><time>{pubDate}</time></p>}
+      {
+        updatedDate && (
+          <div>
+            Last updated on <time>{updatedDate}</time>
+          </div>
+        )
+      }
+      {heroImage && <img width={720} height={360} src={heroImage} alt="" />}
+      <slot />
     </main>
     <Footer />
   </body>
