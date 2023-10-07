@@ -7,7 +7,7 @@ pubDate: "Oct 7 2023"
 
 I’ve been interested in the _idea_ of Rust for a couple years now. Type safe, memory safe, and an emphasis on correctness. What’s not the love?
 
-The percentage of errors I encounter while working on [Apollo](https://apollo.fyi) (a Python app) that could have been caught by the Rust compiler is quite high (I won’t claim 100%, but pretty close). In general, compilers can catch a lot of issues that might otherwise make their way to production when using a dynamic language (like Python or Ruby), thought not all compilers are equal. Type safety is great, but Rust’s emphasis on _correctness_ is where I find the most appeal.
+The percentage of errors I encounter while working on [Apollo](https://apollo.fyi) (a Python app) that could have been caught by the Rust compiler is quite high (I won’t claim 100%, but pretty close). In general, compilers can catch a lot of issues that might otherwise make their way to production when using a dynamic language (like Python or Ruby), though not all compilers are equal. Type safety is great, but Rust’s emphasis on _correctness_ is where I find the most appeal.
 
 I’ve been writing a fair chunk of Java at work. While not my favourite language, the compile time checks are empowering. Significant refactors aren’t as scary as in Python or Ruby. You have the compiler on your side! An incorrect or missing import statement isn’t going to grind your program to a halt at runtime. We usually have tests to catch these issues, yes, but there’s something to be said about having these checks baked into the language.
 
