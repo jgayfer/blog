@@ -57,7 +57,7 @@ struct Service<T: Named> {
 
 How is this different? At first glance the result is the same. The difference comes down to **dynamic** vs **static** dispatch. With a trait object, the concrete type is resolved at _runtime_. With generics, the concrete type is resolved at _compile time_.
 
-In practice this means that as long as we own all code in question, we can get away with only generics. When we're building code with _unknown consumers_ however (such as with a library), a boxed value might be necessary.
+In practice this means that as long as we can infer all types at compile time, we can get away with generics. If types cannot be inferred until runtime, a box is necessary.
 
 ## What about ownership?
 
