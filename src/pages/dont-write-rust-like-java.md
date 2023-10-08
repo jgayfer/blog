@@ -113,4 +113,4 @@ While we could have written this as a service where `UserRepo` is an injected va
 
 ## Embrace Rust for what it is
 
-I feel deep into the hole of **Rust is hard**. A big reason was my insistence that Rust code should look like other code I've written before. While drawing from the past is the boon of experience, embracing existing idioms is important to achieve mastery. Rust requires a mindset shift. Don't fight Rust for what it isn't, embrace it for what it is.
+I fell deep into the hole of **Rust is hard**. A big reason was my insistence that Rust code should look like other code I've written before. While drawing from the past is the boon of experience, embracing existing idioms is important to achieve mastery. Rust requires a mindset shift. Don't fight Rust for what it isn't, embrace it for what it is.
