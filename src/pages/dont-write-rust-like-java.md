@@ -31,7 +31,7 @@ struct Service {
 }
 ```
 
-The above code will not compile, as the size of `Named` cannot be determined at compile time. To get around this, we can ["box"](https://doc.rust-lang.org/std/boxed/struct.Box.html) the trait, allowing us to point to dynamically allocate memory on the heap (called a trait object). The `Box` itself is of a known size, allowing our program to compile.
+The above code will not compile, as the size of `Named` cannot be determined at compile time. To get around this, we can ["box"](https://doc.rust-lang.org/std/boxed/struct.Box.html) the trait, allowing us to point to dynamically allocated memory on the heap (called a trait object). The `Box` itself is of a known size, allowing our program to compile.
 
 ```rust
 trait Named {
