@@ -5,7 +5,7 @@ description: "I didn't discover the joy of writing Rust code until I stopped try
 pubDate: "Oct 7 2023"
 ---
 
-I’ve been interested in the _idea_ of Rust for a couple years now. Type safe, memory safe, and an emphasis on correctness. What’s not the love?
+I’ve been interested in the _idea_ of Rust for a couple years now. Type safe, memory safe, and an emphasis on correctness. What’s not to love?
 
 The percentage of errors I encounter while working on [Apollo](https://apollo.fyi) (a Python app) that could have been caught by the Rust compiler is quite high (I won’t claim 100%, but pretty close). In general, compilers can catch a lot of issues that might otherwise make their way to production when using a dynamic language (like Python or Ruby), though not all compilers are equal. Type safety is great, but Rust’s emphasis on _correctness_ is where I find the most appeal.
 
